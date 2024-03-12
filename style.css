@@ -1,0 +1,151 @@
+/* **************** Common Style ********************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.debug footer {
+    min-height: 10rem;
+}
+
+.debug .column-nav-small,
+.debug .column-nav-big,
+.debug .jumbo-content,
+.debug .col-big,
+.debug .col-small,
+.debug .col-single,
+.debug .social,
+.debug .col-link-1,
+.debug .col-link-2,
+.debug .col-link-3,
+.debug .col-link-4,
+.debug .col-logo,
+.debug .col-sign {
+    border: dashed 2px black;
+}
+
+.debug hr {
+    color: lightgray;
+    margin-bottom: 1rem;
+}
+
+.debug .footer-nav {
+    background-color: lightblue;
+}
+
+.boxed {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+}
+
+.padding-top-bottom {
+    padding: 2rem 0;
+}
+
+/* **************** header ********************* */
+
+/* ******** navbar ********* */
+
+header {
+    background-color: lightblue;
+}
+
+header .column-nav-small,
+header .column-nav-big {
+    background-color: orange;
+    padding: 1rem;
+}
+
+.column-nav-small {
+    min-width: 20%;
+}
+
+.column-nav-big {
+    min-width: 60%;
+    text-align: center;
+}
+
+/* ********** jumbotron *************/
+
+.jumbotron {
+    background-color: blue;
+}
+
+.jumbo-content {
+    background-color: violet;
+    max-width: 50%;
+}
+
+/* ********************** fine header ********************** */
+
+/*************************** main ***************** */
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: lightgray;
+}
+
+.col-big {
+    min-width: 60%;
+    background-color: aqua;
+}
+
+.col-small {
+    min-width: 40%;
+    background-color: deeppink;
+}
+
+.col-single {
+    background-color: green;
+    width: 100%;
+}
+
+/*************************** fine main ***************************/
+
+/***************************** footer *****************************/
+
+footer {
+    background-color: #222;
+    padding-bottom: 1rem;
+}
+
+/********************* prima sezione footer *********************/
+
+.social {
+    width: 30%;
+    background-color: deeppink;
+}
+
+.link {
+    width: 70%;
+}
+
+.link > div {
+    background-color: aqua;
+    width: calc(100% / 4);
+}
+
+/********************* seconda sezione footer *********************/
+
+.col-logo,
+.col-sign {
+    background-color: azure;
+}
+
+.footer-nav {
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
