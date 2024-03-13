@@ -3,71 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>HTMLCSS Struttura Discord</title>
 </head>
-<body class="debug">
+<body>
     <!-- header -->
     <header>
         <!-- sezione navbar -->
         <nav class="boxed column padding-top-bottom">
-            <div class="column-nav-small">logo</div>
-            <div class="column-nav-big">link link link link</div>
-            <div class="column-nav-small">sign in</div>
+            <div class="column-nav-small">
+                <a href="#"><img src="./img/logo.svg" alt="logo discord"></a>
+            </div>
+            <div id="link-page" class="column column-nav-big">
+                <a href="#">Scarica</a>
+                <a href="#">Perchè Dsicord</a>
+                <a href="#">Nitro</a>
+                <a href="#">Sicurezza</a>
+                <a href="#">Assistenza</a>
+            </div>
+            <div id="accedi" class="column column-nav-small">
+                <button type="button" class="button-light">Accedi</button>
+            </div>
         </nav>
         <!-- sezione jumbotron e contenuto -->
         <div class="jumbotron padding-top-bottom">
-            <div class="boxed jumbo-content">contenuto</div>
+            <div class="boxed jumbo-content">
+                <h1>Il tuo posto per parlare</h1>
+                <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+                <button type="button" class="button-light"><i class="fa-solid fa-arrow-down"></i> Scarica per Mac</button>
+                <button type="button" class="button-dark">Apri Discord nel tuo browser</button>
+            </div>
         </div>
     </header>
     <!-- main -->
     <main>
-        <!-- prima sezione 2 colonne -->
+        <!-- prima sezione due colonne -->
         <section class="light padding-top-bottom">
             <div class="boxed column">
-                <div class="col-big">contenuto</div>
-                <div class="col-small">contenuto</div>
+                <div class="col-big">
+                    <img src="./img/item1.svg">
+                </div>
+                <div class="col-small">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discors sono organizzati in canali tematici in cui collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo</p>
+                </div>
             </div>
         </section>
-        <!-- seconda sezione 2 colonne -->
+        <!-- seconda sezione due colonne -->
+        <img class="wave" src="./img/wave.svg" alt="">
         <section class="dark padding-top-bottom">
             <div class="boxed column">
-                <div class="col-small">contenuto</div>
-                <div class="col-big">contenuto</div>
+                <div class="col-small">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discors sono organizzati in canali tematici in cui collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo</p>
+                </div>
+                <div class="col-big">
+                    <img src="./img/item2.svg">
+                </div>
             </div>
         </section>
-        <!-- terza sezione 2 colonne -->
+        <!-- terza sezione due colonne -->
+        <img class="wave rotate" src="./img/wave.svg" alt="">
         <section class="light padding-top-bottom">
             <div class="boxed column">
-                <div class="col-big">contenuto</div>
-                <div class="col-small">contenuto</div>
+                <div class="col-big">
+                    <img src="./img/item3.svg">
+                </div>
+                <div class="col-small">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discors sono organizzati in canali tematici in cui collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo</p>
+                </div>
             </div>
         </section>
-        <!-- quarta sezione 1 colonna-->
+        <!-- quarta sezione una colonna-->
+        <img class="wave" src="./img/wave.svg" alt="">
         <section class="dark padding-top-bottom">
             <div class="boxed column">
-                <div class="col-single">contenuto</div>
+                <div class="col-single">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>I server Discors sono organizzati in canali tematici in cui collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo</p>
+                    <img src="./img/item4-big.svg">
+                </div>
+            </div>
+            <div class="download">
+                <h3>Pronto a iniziare la tua avvenutra?</h3>
+                <button type="button" class="button-violet"><i class="fa-solid fa-arrow-down"></i> Scarica per Mac</button>
             </div>
         </section>
     </main>
     <!-- footer -->
     <footer>
         <!-- prima sezione 1 colonna grande + 4 colonne piccole -->
-        <div class="boxed column padding-top-bottom">
-            <div class="social">social</div>
-            <div class="column link">
-                <div class="col-link-1">contenuto</div>
-                <div class="col-link-2">contenuto</div>
-                <div class="col-link-3">contenuto</div>
-                <div class="col-link-4">contenuto</div>
+        <section class="boxed column padding-top-bottom">
+            <div class="social">
+                <h3>Il tuo posto per parlare</h3>
+                <img id="bandiera" src="./img/ita.png"><span> Italiano <i class="fa-solid fa-chevron-down"></i></span>
+                <p>
+                    <i class="fa-brands fa-twitter"></i> 
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </p>
             </div>
-        </div>
-        <hr>
+            <div class="column link">
+                <div class="col-link-1">
+                    <p class="first-row"><a href="#"></a>contenuto</p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                </div>
+                <div class="col-link-2">
+                    <p class="first-row"><a href="#"></a>contenuto</p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                </div>
+                <div class="col-link-3">
+                    <p class="first-row"><a href="#"></a>contenuto</p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                </div>
+                <div class="col-link-4">
+                    <p class="first-row"><a href="#"></a>contenuto</p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                    <p><a href="#">contenuto</a></p>
+                </div>
+            </div>
+        </section>
         <!-- seconda sezione colonna con logo e bottone -->
-        <div class="boxed column footer-nav">
-            <div class="col-logo">contenuto</div>
-            <div class="col-sign">ciao</div>
-        </div>
+        <section class="boxed column footer-nav">
+            <div class="col-logo">
+                <a href="#"><img src="./img/logo.svg" alt="logo discord"></a>
+            </div>
+            <div class="col-sign">
+                <button type="button" class="button-violet">Accedi</button>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
+

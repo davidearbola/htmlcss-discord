@@ -10,35 +10,6 @@ body {
     font-family: sans-serif;
 }
 
-.debug footer {
-    min-height: 10rem;
-}
-
-.debug .column-nav-small,
-.debug .column-nav-big,
-.debug .jumbo-content,
-.debug .col-big,
-.debug .col-small,
-.debug .col-single,
-.debug .social,
-.debug .col-link-1,
-.debug .col-link-2,
-.debug .col-link-3,
-.debug .col-link-4,
-.debug .col-logo,
-.debug .col-sign {
-    border: dashed 2px black;
-}
-
-.debug hr {
-    color: lightgray;
-    margin-bottom: 1rem;
-}
-
-.debug .footer-nav {
-    background-color: lightblue;
-}
-
 .boxed {
     max-width: 1000px;
     margin: 0 auto;
@@ -46,10 +17,53 @@ body {
 
 .column {
     display: flex;
+    align-items: center;
 }
 
 .padding-top-bottom {
-    padding: 2rem 0;
+    padding: 3rem 0;
+}
+
+.button-light,
+.button-violet,
+.button-dark {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+}
+
+.button-light {
+    color: #222;
+    background-color: white;
+}
+
+.button-violet {
+    color: white;
+    background-color: #7289DA;
+}
+
+.button-dark {
+    color: white;
+    background-color: #222;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.wave {
+    width: 100%;
+    opacity: 0.04;
+    display: block;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 /* **************** header ********************* */
@@ -57,12 +71,15 @@ body {
 /* ******** navbar ********* */
 
 header {
-    background-color: lightblue;
+    background-color: #255EE9;
+}
+
+header nav {
+    align-items: center;
 }
 
 header .column-nav-small,
 header .column-nav-big {
-    background-color: orange;
     padding: 1rem;
 }
 
@@ -75,42 +92,87 @@ header .column-nav-big {
     text-align: center;
 }
 
+#link-page {
+    justify-content: space-around;
+}
+
+#link-page a {
+    text-decoration: none;
+    color: white;
+}
+
+#accedi {
+    justify-content: flex-end;
+}
+
 /* ********** jumbotron *************/
 
 .jumbotron {
-    background-color: blue;
+    background-image: url(./img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
 }
 
 .jumbo-content {
-    background-color: violet;
     max-width: 50%;
+    color: white;
+    text-align: center;
+}
+
+.jumbo-content h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.jumbo-content p,
+.jumbo-content button {
+    margin: 0.5rem 0.5rem;
 }
 
 /* ********************** fine header ********************** */
 
 /*************************** main ***************** */
 
+
 .light {
     background-color: white;
 }
 
 .dark {
-    background-color: lightgray;
+    background-color: #F6F6F6;
 }
 
 .col-big {
     min-width: 60%;
-    background-color: aqua;
 }
 
 .col-small {
     min-width: 40%;
-    background-color: deeppink;
 }
 
 .col-single {
-    background-color: green;
     width: 100%;
+    text-align: center;
+}
+
+.col-big img,
+.col-small img {
+    width: 100%;
+}
+
+.download {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(./img/stars.svg);
+    background-position: bottom;
+    background-size: contain;
+}
+
+.download h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
 }
 
 /*************************** fine main ***************************/
@@ -124,28 +186,53 @@ footer {
 
 /********************* prima sezione footer *********************/
 
+
 .social {
     width: 30%;
-    background-color: deeppink;
+    align-self: flex-start;
+    color: white;
+}
+
+.social h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6381D5;
+}
+
+#bandiera {
+    height: 1rem;
+}
+
+.column .link {
+    align-items: flex-start;
 }
 
 .link {
     width: 70%;
+    text-align: center;
 }
 
 .link > div {
-    background-color: aqua;
     width: calc(100% / 4);
+}
+
+.first-row {
+    color: #6381D5;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer section:first-child {
+    border-bottom: 1px solid #6381D5;
+    margin-bottom: 3rem;
 }
 
 /********************* seconda sezione footer *********************/
 
-.col-logo,
-.col-sign {
-    background-color: azure;
-}
-
 .footer-nav {
     justify-content: space-between;
-    padding: 2rem 1rem;
 }
+
